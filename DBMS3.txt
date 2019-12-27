@@ -1,0 +1,134 @@
+ create table PROGRAMMER(EmpNo number(5) primary key,
+  2  LastName varchar(30) not null,
+  3  FirstName varchar(30) not null,
+  4  HireDate date,
+  5  ProjId varchar(20),
+  6  Language varchar(15),
+  7  TaskNo number(2),
+  8  Privilige varchar(25));
+
+Table created.
+
+desc PROGRAMMER;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(5)
+ LASTNAME                                  NOT NULL VARCHAR2(30)
+ FIRSTNAME                                 NOT NULL VARCHAR2(30)
+ HIREDATE                                           DATE
+ PROJID                                             VARCHAR2(20)
+ LANGUAGE                                           VARCHAR2(15)
+ TASKNO                                             NUMBER(2)
+ PRIVILIGE                                          VARCHAR2(25)
+ 
+ insert into PROGRAMMER values(390,
+  2  'Ghosh','Pinky','05-Jan-93',
+  3  'KCW','Java',11,
+  4  'Top Secret');
+
+1 row created.
+
+ insert into PROGRAMMER values(201,
+  2  'Gupta','Saurav',
+  3  '01-Jan-95',
+  4  'NPR','VB',52,
+  5  'Secret');
+
+1 row created.
+
+SQL> insert into PROGRAMMER values(134,
+  2  'Chaudhury','Supriyo','15-Jul-95',
+  3  'TIPPS','C++',52,
+  4  'Secret');
+
+1 row created.
+
+ insert into PROGRAMMER values(896,
+  2  'Jha','Ranjit','15-Jun-97',
+  3  'KCW','Java',10,
+  4  'Top Secret');
+
+1 row created.
+
+ insert into PROGRAMMER values(789,
+  2  'Agarwal','Praveen','31-Aug-98',
+  3  'Rnc','VB',11,
+  4  'Secret');
+
+1 row created.
+
+
+ insert into PROGRAMMER (EmpNo,
+  2  LastName,FirstName,
+  3  HireDate,ProjId,Language,TaskNo) values(345,'John','Peter',
+  4  '15-Nov-99','TIPPS',
+  5  'Java',52);
+
+1 row created.
+
+ insert into PROGRAMMER values(563,
+  2  'Anderson','Andy',
+  3  '15-Aug-94','NITTS',
+  4  'C++',89,'Confidential');
+
+1 row created.
+
+ SELECT *FROM PROGRAMMER;
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+       789 Agarwal                        Praveen
+31-AUG-98 Rnc                  VB                      11
+Secret
+
+       390 Ghosh                          Pinky
+05-JAN-93 KCW                  Java                    11
+Top Secret
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+
+       201 Gupta                          Saurav
+01-JAN-95 NPR                  VB                      52
+Secret
+
+       134 Chaudhury                      Supriyo
+15-JUL-95 TIPPS                C++                     52
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+Secret
+
+       896 Jha                            Ranjit
+15-JUN-97 KCW                  Java                    10
+Top Secret
+
+       345 John                           Peter
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+15-NOV-99 TIPPS                Java                    52
+
+
+       563 Anderson                       Andy
+15-AUG-94 NITTS                C++                     89
+Confidential
+
+
+7 rows selected.

@@ -1,0 +1,187 @@
+select *from PROGRAMMER;
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+       789 Agarwal                        Praveen
+31-AUG-98 Rnc                  VB                      11
+Secret
+
+       390 Ghosh                          Pinky
+05-JAN-93 KCW                  Java                    11
+Top Secret
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+
+       201 Gupta                          Saurav
+01-JAN-95 NITTS                C++                     52
+Secret
+
+       134 Chaudhury                      Supriyo
+15-JUL-95 TIPPS                C++                     52
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+Secret
+
+       896 Jha                            Ranjit
+15-JUN-97 KCW                  Java                    10
+Top Secret
+
+       345 John                           Peter
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+15-NOV-99 TIPPS                Java                    52
+
+
+       563 Anderson                       Andy
+15-AUG-94 NITTS                C++                     89
+Confidential
+
+
+7 rows selected.
+
+
+UPDATE BOOKS SET ShelfNo='S10'
+  2  WHERE Title='DBMS';
+
+2 rows updated.
+
+ SELECT *FROM BOOKS;
+
+    BOOKID TITLE                TOPICID
+---------- -------------------- --------------------
+PUBLISHERNAME                  PLACEOFPUBLICATION        PRICE PURCHASED
+------------------------------ -------------------- ---------- ---------
+SHELFNO
+----------
+      8293 DBMS                 DB1
+Prentice Hall                  Mumbai                      255 01-JAN-95
+S10
+
+      5645 DBMS                 DB1
+Pearson Education              Mumbai                      655 05-JAN-93
+S10
+
+    BOOKID TITLE                TOPICID
+---------- -------------------- --------------------
+PUBLISHERNAME                  PLACEOFPUBLICATION        PRICE PURCHASED
+------------------------------ -------------------- ---------- ---------
+SHELFNO
+----------
+
+      6565 C                    C1
+TMH                            Mumbai                      840 31-AUG-98
+S66
+
+      6567 C++                  Cplus1
+ABC Publishers                 Delhi                       300 15-JUL-95
+
+    BOOKID TITLE                TOPICID
+---------- -------------------- --------------------
+PUBLISHERNAME                  PLACEOFPUBLICATION        PRICE PURCHASED
+------------------------------ -------------------- ---------- ---------
+SHELFNO
+----------
+S77
+
+      4576 JAVA                 JAVA1
+Guru Govind Pub                Delhi                       500 15-JUN-97
+S87
+
+      3433 OOPS                 OOPS1
+
+    BOOKID TITLE                TOPICID
+---------- -------------------- --------------------
+PUBLISHERNAME                  PLACEOFPUBLICATION        PRICE PURCHASED
+------------------------------ -------------------- ---------- ---------
+SHELFNO
+----------
+Dave Publishers                Pune                        600 15-NOV-99
+S56
+
+      4655 SAD                  SAD1
+Sajan Publishers               Cochin                      700 15-AUG-99
+S76
+
+
+7 rows selected.
+
+
+
+ DELETE FROM PROGRAMMER WHERE EmpNo=134;
+
+1 row deleted.
+
+ select *from PROGRAMMER;
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+       789 Agarwal                        Praveen
+31-AUG-98 Rnc                  VB                      11
+Secret
+
+       390 Ghosh                          Pinky
+05-JAN-93 KCW                  Java                    11
+Top Secret
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+
+       201 Gupta                          Saurav
+01-JAN-95 NITTS                C++                     52
+Secret
+
+       896 Jha                            Ranjit
+15-JUN-97 KCW                  Java                    10
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+Top Secret
+
+       345 John                           Peter
+15-NOV-99 TIPPS                Java                    52
+
+
+       563 Anderson                       Andy
+
+     EMPNO LASTNAME                       FIRSTNAME
+---------- ------------------------------ ------------------------------
+HIREDATE  PROJID               LANGUAGE            TASKNO
+--------- -------------------- --------------- ----------
+PRIVILIGE
+-------------------------
+15-AUG-94 NITTS                C++                     89
+Confidential
+
+
+6 rows selected.

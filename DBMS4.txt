@@ -1,0 +1,46 @@
+create table WEATHER(City varchar(20),
+  2  State varchar(30) null,
+  3  High number(5),
+  4  Low number(5));
+
+Table created.
+
+
+insert into WEATHER values(
+  2  'Calcutta','West Bengal',
+  3  105,90);
+
+1 row created.
+
+ insert into WEATHER values(
+  2  'Trivandrum','Kerala',
+  3  101,92);
+
+1 row created.
+
+insert into WEATHER values(
+  2  'Mumbai','Maharashtra',
+  3  88,69);
+
+1 row created.
+
+ insert into WEATHER values(
+  2  'Bangalore','Karnataka',
+  3  77,60);
+
+1 row created.
+
+ insert into WEATHER (City,High,Low) values(
+  2  'New Delhi',80,72);
+
+1 row created.
+
+ select *from WEATHER;
+
+CITY                 STATE                                HIGH        LOW
+-------------------- ------------------------------ ---------- ----------
+Calcutta             West Bengal                           105         90
+Trivandrum           Kerala                                101         92
+Mumbai               Maharashtra                            88         69
+Bangalore            Karnataka                              77         60
+New Delhi                                                   80         72

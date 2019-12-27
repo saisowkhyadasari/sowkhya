@@ -1,0 +1,69 @@
+create table BOOKS(
+  2  BookId number(10),
+  3  Title varchar(20),
+  4  TopicId varchar(20),
+  5  PublisherName varchar(30),
+  6  PlaceofPublication varchar(20),
+  7  Price number(10),
+  8  PurchaseDate date,
+  9  ShelfNo varchar(10));
+
+Table created.
+
+ insert into BOOKS values(8293,
+  2  'DBMS','DB1',
+  3  'Prentice Hall',
+  4  'Mumbai',
+  5  255,'01-Jan-95','S11');
+
+1 row created.
+
+ insert into BOOKS values(5645,
+  2  'DBMS','DB1',
+  3  'Pearson Education',
+  4  'Mumbai',
+  5  655,'05-Jan-93','S12');
+
+1 row created.
+
+ insert into BOOKS values(
+  2  6565,'C','C1',
+  3  'TMH',
+  4  'Mumbai',
+  5  840,'31-Aug-98','S66');
+
+1 row created.
+
+
+ insert into BOOKS values(
+  2  6567,'C++','Cplus1',
+  3  'ABC Publishers',
+  4  'Delhi',
+  5  300,'15-JUL-95',
+  6  'S77' );
+
+1 row created.
+
+ insert into BOOKS values(
+  2  4576,'JAVA','JAVA1',
+  3  'Guru Govind Pub',
+  4  'Delhi',
+  5  500,'15-jun-97','S87');
+
+1 row created.
+
+ insert into BOOKS values(
+  2  3433,'OOPS','OOPS1',
+  3  'Dave Publishers',
+  4  'Pune',600,
+  5  '15-Nov-99','S56');
+
+1 row created.
+
+ insert into BOOKS values(
+  2  4655,'SAD','SAD1',
+  3  'Sajan Publishers',
+  4  'Cochin',700,
+  5  '15-AUG-99','S76');
+
+1 row created.

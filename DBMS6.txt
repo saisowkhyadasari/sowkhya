@@ -1,0 +1,95 @@
+create table std (regno number(4) primary key,
+  2  fname varchar(20) not null,
+  3  mname varchar(20) null,
+  4  lname varchar(20) not null);
+
+Table created.
+
+ alter table std add(mob number (10),branch char(5),email varchar(20) not null unique);
+
+Table altered.
+
+SQL> desc std;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ REGNO                                     NOT NULL NUMBER(4)
+ FNAME                                     NOT NULL VARCHAR2(20)
+ MNAME                                              VARCHAR2(20)
+ LNAME                                     NOT NULL VARCHAR2(20)
+ MOB                                                NUMBER(10)
+ BRANCH                                             CHAR(5)
+ EMAIL                                     NOT NULL VARCHAR2(20)
+
+ insert into std values(1020,'sai','manoj','shashank',1000000001,'ECE','saimanoj@gmail.com');
+
+1 row created.
+
+ insert into std values(1021,'sai','ma','nu',1000000002,'ECE','saimanu@gmail.com');
+
+1 row created.
+
+  insert into std values(1022,'k','gupta','r',1000000003,'EEE','kgupta@gmail.com');
+
+1 row created.
+
+ select *from std;
+
+     REGNO FNAME                MNAME                LNAME
+---------- -------------------- -------------------- --------------------
+       MOB BRANC EMAIL
+---------- ----- --------------------
+      1020 sai                  manoj                shashank
+1000000001 ECE   saimanoj@gmail.com
+
+      1021 sai                  ma                   nu
+1000000002 ECE   saimanu@gmail.com
+
+      1022 k                    gupta                r
+1000000003 EEE   kgupta@gmail.com
+
+
+ create table address (regno number(4),
+  2  street varchar(30),
+  3  city char(15) default 'HYD',
+  4  foreign key(regno) references std(reg));
+foreign key(regno) references std(reg))
+                                  *
+
+SQL> create table address (regno number(4),
+  2  street varchar(30),
+  3  city char(15) default 'HYD',
+  4  foreign key(regno) references std(regno));
+
+Table created.
+
+
+ insert into address values(1020,'Hitech city','HYD');
+
+1 row created.
+
+ alter table address add(mob number(10));
+
+Table altered.
+
+ insert into address values(1021,'cross roads','HYD',1000000002);
+
+1 row created.
+
+ select *from address;
+
+     REGNO STREET                         CITY                   MOB
+---------- ------------------------------ --------------- ----------
+      1020 Hitech city                    HYD
+      1021 cross roads                    HYD             1000000002
+
+ update address set mob='020123'
+  2  where regno=1021;
+
+1 row updated.
+
+ select *from address;
+
+     REGNO STREET                         CITY                   MOB
+---------- ------------------------------ --------------- ----------
+      1020 Hitech city                    HYD
+      1021 cross roads                    HYD                  20123
