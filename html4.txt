@@ -1,0 +1,25 @@
+<html>
+<body>
+<form action="sport.html" method="post">
+enter name<input type="text" name="empname" value="your name" ><br>
+enter password <input type="password" name="pwd"><br>
+experience<textarea rows="2" cols="40" name="exp"></textarea><br>
+technologies <input type="checkbox" name ="tech" value="java">java
+<input type="checkbox" name ="tech" value="oracle">oracle
+<input type="checkbox" name ="tech" value="c">c <br>
+
+marital status <input type="radio" name ="status" value="single">single
+<input type="radio" name ="status" value="married">married
+<input type="radio" name ="status" value="divorced">divorced <br>
+
+select month<select name="month">
+<option value="jan">january</option>
+<option value="feb">february</option>
+<option value="mar">march</option>
+</select><br>
+
+<input type="button" value="reset">
+<input type="submit">
+</form>
+</body>
+</html>
