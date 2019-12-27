@@ -1,0 +1,15 @@
+package deloitte;
+
+public class TypeCasting {
+
+	public static void main(String[] args) {
+		byte b=20;
+		short s=b;// implicit casting
+		System.out.println(s);
+		int x=44444;
+		short s1= (short) x;//explicit casting
+		System.out.println(s1);
+		
+	}
+
+}

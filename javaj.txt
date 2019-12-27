@@ -1,0 +1,27 @@
+package deloitte;
+
+public class MethodOverLoading {
+	void add(int x,int y)
+	{
+		System.out.println("int "+(x+y));
+		System.out.println();
+	}
+	void add(double x,double y)
+	{
+		System.out.println("double "+(x+y));
+		System.out.println();
+	}
+	void add(String x,String y)
+	{
+		System.out.println("String "+(x+y));
+		System.out.println();
+	}
+
+public static void main(String[] args) {
+	MethodOverLoading method=new MethodOverLoading();
+	method.add(10, 20);
+	method.add(10.4, 20.1);
+	method.add("del", "oitte");
+
+}
+}

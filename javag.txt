@@ -1,0 +1,76 @@
+package deloitte;
+
+public class CmdLine {
+
+	public static void main(String[] args) {
+		String name=args[0];
+		System.out.println(name);
+		for(int i=0;i<name.length();i++)
+		System.out.println(name.charAt(i));
+		}
+}
+
+
+
+package deloitte;
+
+public class CmdLine2 {
+
+	public static void main(String[] args) {
+		String name=args[0];
+		System.out.println(name);
+		StringBuffer buffer=new StringBuffer();
+		for(int i=0;i<name.length();i++)
+		{
+			buffer.append(name.charAt(i));
+		System.out.println(buffer);
+		}
+	}
+
+}
+
+
+
+package deloitte;
+
+public class CmdLine3 {
+
+	public static void main(String[] args) {
+		String name=args[0];
+		StringBuffer b=new StringBuffer();
+		b.append(name);
+		System.out.println(b);
+		StringBuffer c=new StringBuffer();
+		c.append(b.reverse());
+		System.out.println(c);
+		String str1=c.toString();
+		//System.out.println(name.compareTo(str1));
+		int a=(name.compareTo(str1));
+		if(a==0)
+			System.out.println("palindrome");
+			else
+				System.out.println("not palindrome");	
+	    
+
+	}
+
+}
+
+
+
+
+package deloitte;
+
+public class CommandLineargs {
+
+	public static void main(String[] args) {
+		int code=Integer.parseInt(args[0]);
+		String name=args[1];
+		double sal=Double.parseDouble(args[2]);
+		System.out.println(code);
+		System.out.println(name);
+				System.out.println(sal+=500);
+
+}
+
+}

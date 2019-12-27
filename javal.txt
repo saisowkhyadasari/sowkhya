@@ -1,0 +1,28 @@
+package deloitte;
+
+public class MutableStrings {
+
+	public static void main(String[] args) {
+		StringBuffer sb=new StringBuffer();// synchronised or thread safe
+		sb.append("deloitte");
+		System.out.println(sb);
+		sb.append(" hyd");
+		System.out.println(sb);
+		System.out.println(sb.length());
+		System.out.println(sb.delete(7, 10));
+		System.out.println(sb.reverse());
+		System.out.println(sb.replace(6, 11, "java"));
+		String str="cloud";
+		StringBuffer sb1=new StringBuffer();
+		sb1.append(str);
+		System.out.println(sb1);
+		String str1=sb1.toString();
+		System.out.println(str1);
+		StringBuilder builder=new StringBuilder();
+		builder.append("engineering");
+		System.out.println(builder);
+		
+		
+	}
+
+}

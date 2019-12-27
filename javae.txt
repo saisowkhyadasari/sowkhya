@@ -1,0 +1,46 @@
+package deloitte;
+
+public class Account {
+	private int accountNumber;
+	private String customerName;
+	private double balance;
+	
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public double getBalance() {
+		return balance;
+	}
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	
+
+}
+
+
+package deloitte;
+
+public class AccountAppl {
+
+	public static void main(String[] args) {
+		Account account=new Account();
+		account.setAccountNumber(1110);
+		account.setCustomerName("deloitte");
+		account.setBalance(6000000);
+		System.out.println(account.getAccountNumber());
+		System.out.println(account.getCustomerName());
+		System.out.println(account.getBalance());
+		
+	}
+
+}
