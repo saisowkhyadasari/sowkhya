@@ -1,0 +1,28 @@
+h1
+{
+color:sienna;
+}
+h2{
+color:green}
+h3{
+color:blue;
+}
+p{
+color:red;
+}
+body{
+background-color:pink;
+}
+
+
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="file.css">
+</head>
+<body>
+<h1> heading1</h1>
+<h2> heading2</h2>
+<h3> heading3</h3>
+<p> a sample paragraph</p><br>
+this is normal text....
+</html>

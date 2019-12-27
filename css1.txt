@@ -1,0 +1,23 @@
+<html>
+<head>
+<style>
+body{
+background-color:silver;
+}
+p{
+text-align:center;color:red;
+}
+#h1{
+color:blue;
+}
+.h2{
+color:sienna;
+}
+</style>
+</head>
+<body>
+<p style="background-color:yellow;">this is para one</p><br>
+<h1 id="h1">heading<h1>
+<h2 class="h2">heading h2</h2>
+</body>
+</html>
